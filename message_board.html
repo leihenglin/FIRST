@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My first blog</title>
+	<link rel="stylesheet" type="text/css" href="styles/basic.css">
+</head>
+<body>
+   	<header>
+   		<img src="imgs/explain.jpg" alt="A wonderful picture">
+   		<nav>
+			<ul>
+				<li><a href="homepage.html" class="here">主页</a></li>
+				<li><a href="content.html">说说</a></li>
+				<li><a href="photos.html">相册</a></li>
+				<li><a href="message_board.html">留言板</a></li>
+			</ul>
+		</nav>	
+	</header>
+	<article>
+	<h1>请联系我们</h1>
+	<form method="post" action="">
+	<fieldset>
+		<p>
+		  <label for="">姓名:</label>
+		  <input type="text" id="name" name="name" placeholder="您的姓名" required="required"/>
+		</p>
+		<p>
+		  <label for="">邮箱:</label>
+		  <input type="email" id="email" name="email" placeholder="您的邮箱地址" required="required"/>
+		</p>
+		<p>
+		  <label for="">留言:</label>
+		  <textarea cols"100" rows"20" id="message" name="message" placeholder="有什么想告诉我们的吗？" required="required"></textarea> 
+		</p>
+		<input type="submit" value="send"/>
+	</fieldset>
+	</form>
+	</article>
+</body>
+</html>
