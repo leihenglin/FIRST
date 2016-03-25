@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>switchcolor</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/switchcolor.css">
+</head>
+<body>
+<div id="container">
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	<div class="haha"></div>
+	
+</div>
+</body>
+
+
+
+
+<script type="text/javascript">
+	'use strit';
+	// function (i) {
+	// 	let i = 0; i < hahas.length; i ++
+	// }
+
+	var a = ["black","blue","white","yellow","red","gray","pink"," ","midnightblue","deepskyblue","#6E6767","#D82C64","#353268","#494040","#E51921","#2C2929","#A0A832"]
+	function sendcolors(arr){
+		return arr[Math.floor(Math.random()*arr.length)];
+
+	}
+	window.onload = showcolorful;
+	function showcolorful () {
+	  var hahas = document.getElementsByClassName("haha")
+	   for (let i = 0; i < hahas.length; i ++ ) { 
+	  	if (hahas[i].getAttribute("class") == "haha") {
+	        hahas[i].onmousedown = function () {
+	        hahas[i].style.backgroundColor = sendcolors(a);
+	        }
+	 	} 
+	  }
+	}
+
+
+
+
+
+// var a = ["black","blue","white","yellow","red","gray","pink"," ","midnightblue","deepskyblue","#6E6767","#D82C64","#353268","#494040","#E51921","#2C2929","#A0A832"]
+// 	function sendcolors(arr){
+// 		return arr[Math.floor(Math.random()*arr.length)];
+
+// 	}
+// var container = document.getElementById("container");
+// container.onclick = function () {
+// 	var a = window.event.srcElement;
+// 	if  (a.getAttribute("class") == "haha"){
+// 		a.style.backgroundColor = sendcolors(a);
+// 	}
+
+</script>
+</html>
